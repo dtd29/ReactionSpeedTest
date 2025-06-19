@@ -27,7 +27,7 @@ public class PlayerInfoManager : Singleton<PlayerInfoManager>
     {
         if (myUserData != null)
         {
-            SaveScoreToFirestore(myUserData.uid, myUserData.name, myUserData.score); //jslib
+            SaveScoreToFirestore(myUserData.uid, myUserData.name, myUserData.score); //jslib로 이동
             Debug.Log("점수 저장 시도: " + myUserData.uid + myUserData.score);
         }
         else
